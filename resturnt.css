@@ -1,0 +1,292 @@
+body{
+    background:linear-gradient(to buttom,blue,blueviolet);
+ 
+}
+.slid{
+    width: 900px;
+    height: 0px;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 150px;
+    
+}
+img{
+    width: 600px;
+    height: 500px;
+}
+h5{
+    color: red;
+    
+}
+p{
+    color: blue;
+    font-size: 30px
+}
+.list_M{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    position: absolute;
+    top: 660px;
+   
+}
+h2{
+    text-align: center;
+    color: red;
+}
+.lmain{
+    display: flex;
+    justify-content: space-between;
+}
+li:hover{
+color:white;
+background-color: red;
+cursor: pointer;
+}
+.desc{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 980px;
+    /* background-color: blue; */
+ 
+}
+span{
+    color: red
+}
+.dem1{
+    border: 5px yellow solid;
+    width: fit-content;
+margin-right: 2px;    
+}
+.dem2{
+  border: 5px yellow solid; 
+  width: fit-content;
+  position: absolute;
+  right: 400px;
+  top: 70px;
+}
+.dem3{
+    
+  border: 5px yellow solid; 
+  width: fit-content;
+  position: absolute;
+  right: 850px;
+  top: 70px;
+}
+.pric{
+    font-size: 30px;
+    color:red;
+    text-align: center;
+}
+.add_to,.add_one,.add_two
+{
+    margin-right: 40%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+.add_to:hover{
+background-color: blue;
+}
+.add_one:hover{
+background-color: blue;
+}
+.add_two:hover{
+background-color: blue;
+}
+.sel{
+    width: 100%;
+    height: 360px;
+    /* background-color: blue; */
+    position: absolute;
+    top:260% ;
+}
+#sl{
+    position: absolute;
+    right: 40%;
+    top: 20px;
+    font-size:300px;
+    color:rgb(10, 10, 51)
+}
+#sl:hover{
+    color: red;
+    cursor: pointer;
+}
+label{
+font-size: larger;
+color: red;
+
+}
+.count{
+   width: fit-content;
+   height: fit-content;
+   position: absolute;
+   bottom: 0;
+}
+#ord{
+    position: absolute; 
+    right: 5px;
+     top: 60px; 
+     border-radius: 20%; 
+     background-color: blue;
+}
+#reord{
+    position: absolute; 
+    right: 90%;
+     top: 60px; 
+     border-radius: 20%; 
+     background-color: blue;
+}
+#ord:hover{
+    background-color: red;
+}
+#reord:hover{
+    background-color: red;
+
+}
+.connect{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top:320%;
+    background-color: black;
+}
+#r1{
+    margin-right: 20%;
+    
+}
+#r1:hover{
+    color: red;
+    cursor: pointer;
+    padding: 10px;
+    font-size: larger;
+}
+#icon{
+    position: absolute;
+    left: 10%;
+    bottom: 10px;
+    background-color:rgb(20, 20, 82);
+    border-radius: 20%;
+}
+/* #l:hover{
+padding: 5px;
+cursor: pointer;
+} */
+.list_M{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+     cursor: pointer;
+}
+/* .list_M:hover{
+    opacity: 1;
+    cursor: pointer;
+} */
+
+.desc{
+  opacity: 1;
+    transition: opacity 0.3s ease;  
+     cursor: pointer;
+}
+/* .desc:hover{
+    opacity: 1;
+} */
+.sel{
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+     cursor: pointer;
+}
+/* .sel:hover{
+    opacity: 1;
+} */
+ #resturntname{
+    position: fixed;
+ }
+
+
+
+
+
+
+
+
+
+
+
+@media  (min-width:1024px) and (max-width: 1025px) {
+ .sel{
+    width: 100%;
+    height: 360px;
+    /* background-color: blue; */
+    position: absolute;
+    top: 280%;
+    left: -10%
+; 
+ }
+ .connect{
+        width: 110%;
+    height: 200px;
+    position: absolute;
+    top: 340%;
+    background-color: black;
+    right: 30px;
+ }
+ #navmain{
+display: none;
+ }
+ #taref{
+    display: block;
+ }
+}
+@media(min-width:412px) and (max-width:415px){
+    #navmain{
+display: none; 
+}
+.slid{
+        width: 800px;
+    height: 0px;
+    background-color: yellow;
+    position: absolute;
+    left: -85px;
+    transform: translate(-50%, -50%);
+    top: 150px;
+}
+.list_M{
+        width: 200%;
+    height: 300px;
+    left: -513px;
+    background-color: yellow;
+    position: absolute;
+    top: 690px;
+}
+.desc{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 1024px;
+    /* /* background-color: blue; */
+}
+h2{
+    text-align: center;
+    font-size: larger;
+}
+.sel{
+    width: 800px;
+    height: 360px;
+    /* background-color: blue; */
+    position: absolute;
+    top: 200%;
+    right: 142px;
+}
+.connect{
+    width: 881px;
+    height: 318px;
+    position: absolute;
+    top: 246%;
+    right: 86px;
+    background-color: black;
+}
+}
+

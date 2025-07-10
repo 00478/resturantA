@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resturnt.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <title>مطعم</title>
+</head>
+<body >
+  <div style="background: linear-gradient(to right,blue,blueviolet)">
+<div id="resturntname"></div> 
+    <nav id="navmain" class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(235, 235, 50);position: fixed;z-index: 1000;width: 100%;">
+  <div class="container-fluid">
+    <a id="taref" class="navbar-brand" href="#">مطعم <span style="color: red;">الامير</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">القائمة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            العروض
+          </a>
+          <ul style="z-index: 1;" class="dropdown-menu">
+            <li style="background-color: yellow; color: red;"><a class="dropdown-item" href="#">خصومات %50</a></li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">اتصل بنا</a>
+        </li>
+        <li class="nav-item" style=" position: absolute; left: 50px;">
+            <p id="countord">عدد طلبات: <span id="clickcount" style="color: brown;">0</span></p>
+         <i class="fa fa-cart-plus" style="font-size:48px;color:blue;position: absolute;top: 0; left: -50px;"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="slid">
+<div id="carouselExampleCaptions" class="carousel slide">
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="photo.img/fod1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>الذ الوجبات</h5>
+ <p>الذ الوجبات ,فقط من مطعم <span>الامير</span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="photo.img/fod2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>مذاق رائع</h5>
+        <p>مذاق ولا اروع,فقط من مطعم <span>الامير</span></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="photo.img/fod3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>انواع مختلفة</h5>
+        <p>انواع مختلفة ,فقط من مطعم <span>الامير</span></p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="photo.img/fod4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>كافة الاصناف</h5>
+        <p>كافة الاصناف,فقط من مطعم <span>الامير</span></p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="photo.img/fod5.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>امهر الطهاة</h5>
+       <p>امهر الطهاة, فقط من مطعم <span>الامير</span></p>
+      </div>
+    </div>
+  </div>
+  <button style="background-color: black;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button style="background-color: black;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+   <div class="carousel-indicators" style="background-color: aqua;">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+
+  </div>
+</div>
+</div>
+<div class="list_M">
+    <h2>قائمة الوجبات</h2>
+    <hr> 
+    <div class="lmain">
+    <span class="lm1">
+    <ul style="font-size: 30px; color: red;">
+ مشاوي باتواعها:
+<li>مشاوي دجاج</li>
+<li>مشاوي لحوم</li>
+<li>مشاوي السمك</li>
+
+    </ul>
+    </span>
+       <span class="lm2">
+    <ul style="font-size: 30px; color: red;">
+وجبات الارز:
+<li>مندي رز</li>
+<li>كبسة</li>
+<li>مقلوبة بكافة انواعها</li>
+
+    </ul>
+    </span>
+       <span class="lm3">
+    <ul style="font-size: 30px; color: red;">
+ وجبات رئيسية:
+<li>كريسبة </li>
+<li>شاورما</li>
+<li>زنجر</li>
+<li>برغر </li>
+
+    </ul>
+    </span>
+    </div>
+</div>
+<div class="desc">
+   <h2>تفاصيل الوجبات</h2>
+   <hr>
+   <div class="dem1">
+   <div> <img class="dem1" src="fod1.jpg" alt="">
+  <p class="pric" >38$</p>
+         
+  <button class="add_to"><i class="fa fa-cart-plus" style="font-size:48px;color:red"></i></button>
+  </div>
+    <!-- <img class="dem2" src="photo/fod2.jpg" alt="">
+    <img class="dem3" src="photo/fod3.jpg" alt=""> <br>
+    <img class="dem4" src="photo/fod4.jpg" alt="">
+    <img class="dem5" src="photo/fod5.jpg" alt=""> -->
+
+   </div>
+   <div class="dem2">
+   <div> <img class="dem1" src="fod2.jpg" alt="">
+  <p class="pric" >30$</p>
+         
+  <button class="add_one"><i class="fa fa-cart-plus" style="font-size:48px;color:red"></i></button>
+  </div>
+    <!-- <img class="dem2" src="photo/fod2.jpg" alt="">
+    <img class="dem3" src="photo/fod3.jpg" alt=""> <br>
+    <img class="dem4" src="photo/fod4.jpg" alt="">
+    <img class="dem5" src="photo/fod5.jpg" alt=""> -->
+
+   </div>
+      <div class="dem3">
+   <div> <img class="dem1" src="fod4.jpg" alt="">
+  <p class="pric" >20$</p>
+         
+  <button class="add_two"><i class="fa fa-cart-plus" style="font-size:48px;color:red"></i></button>
+  </div>
+    <!-- <img class="dem2" src="photo/fod2.jpg" alt="">
+    <img class="dem3" src="photo/fod3.jpg" alt=""> <br>
+    <img class="dem4" src="photo/fod4.jpg" alt="">
+    <img class="dem5" src="photo/fod5.jpg" alt=""> -->
+
+   </div>
+</div>
+<div class="sel">
+  <h2>
+    سلة تسويق المنتجات
+  </h2>
+  <hr>
+  <button type="submit" id="ord">اتمام الطلب</button>
+  <button type="reset" id="reord">حذف الطلب </button>
+
+  <i class="fa fa-cart-plus" id="sl"></i> <br>
+  <div class="count">
+   
+     
+<p id="count">السعر <span id="sumcount">0</span> </p>
+  
+
+</div>
+</div>
+<div class="connect">
+  <h2 style="z-index: 100;">تواصل</h2>
+  <hr>
+<p style="font-size: 12px;color: red;text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio nihil beatae sed, debitis, excepturi eveniet minima atque accusantium reiciendis doloremque tempore obcaecati possimus aliquid eligendi quam repellendus hic omnis!:</p>
+<a id="r1" href="">098928000</a><br>
+<a id="r1" href="">769992727</a>
+<span id="icon">
+  <svg id="l" width="60px" height="64px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Facebook-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0"> <path d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z" id="Facebook"> </path> </g> </g> </g></svg>
+  <svg id="l" width="64px" height="64px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Whatsapp-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E"> <path d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z" id="Whatsapp"> </path> </g> </g> </g></svg>
+  <svg id="l" width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M362.41 879.648c-95.417 0-192.465-27.316-288.485-81.263-8.064-4.527-11.83-14.15-8.98-22.977 2.855-8.788 11.185-14.191 20.773-13.355 72.17 8.408 148.407-8.75 205.511-42.302-66.043-15.525-119.417-58.397-147.571-120.676a19.454 19.454 0 0 1 3.119-20.884c4.983-5.746 13.011-8.03 20.317-5.781a142.417 142.417 0 0 0 25.033 5.364c-50.106-29.903-103.784-87.197-103.784-172.987 0-7.531 4.335-14.379 11.11-17.573a19.353 19.353 0 0 1 20.654 2.47c6.241 5.099 12.938 9.362 19.821 12.708-14.339-19.44-26.781-43.562-33.857-70.8-12.972-49.989-5.478-100.585 21.683-146.351 3.233-5.516 9.018-9.054 15.372-9.514 6.238-0.681 12.552 2.249 16.584 7.27 57.332 71.633 159.212 158.183 323.066 174.01-3.003-51.854 12.556-136.841 84.154-178.653 87.462-51.13 173.248-44.434 245.606 18.983 32.263-7.187 83.202-29.291 93.741-36.673a19.516 19.516 0 0 1 22.33-0.04c6.696 4.683 9.779 13.052 7.686 20.963-4.87 18.375-15.864 38.765-29.6 57.027 10.881-3.233 20.012-6.505 24.882-9.014 7.837-3.997 17.308-2.322 23.318 4.146 5.937 6.505 6.775 16.131 2.097 23.587-22.942 36.218-59.959 69.963-84.727 88.222 9.931 121.587-39.26 255.425-132.998 360.459-99.976 111.966-233.776 173.634-376.781 173.634h-0.074z" fill="#2577FF"></path><path d="M773.705 209.378c11.484-2.559 25.333-7.039 38.885-12.041-50.557-43.083-107.542-58.134-158.074-50.884 36.738 5.548 86.781 34.522 119.189 62.925zM484.047 365.248c-0.152-2.646-0.222-5.432-0.275-8.24-133.027-2.397-266.805-97.597-324.061-174.009-3.863-5.155-10.347-7.952-16.584-7.271-6.354 0.46-12.138 3.998-15.371 9.514-2.83 4.767-5.318 9.616-7.72 14.483 86.352 148.04 212.727 150.909 364.011 165.523zM954.896 233.745c-6.012-6.466-15.483-8.141-23.32-4.144-4.87 2.509-14.002 5.781-24.882 9.014 13.736-18.262 24.73-38.652 29.6-57.027a19.502 19.502 0 0 0-7.686-20.963 19.52 19.52 0 0 0-22.33 0.039c-3.711 2.6-12.577 7.061-23.723 12.014 0.607 2.903 0.772 5.914-0.021 8.911-4.87 18.375-15.864 38.765-29.599 57.027 10.881-3.233 20.012-6.505 24.882-9.014 7.837-3.997 17.308-2.322 23.32 4.144 5.936 6.507 6.774 16.133 2.095 23.59-22.942 36.216-59.959 69.961-84.726 88.22 9.929 121.587-39.261 255.425-132.997 360.461C592.268 810.433 469.603 871.055 337.5 878.76c8.309 0.411 16.624 0.888 24.91 0.888h0.073c143.006 0 276.806-61.669 376.784-173.633 93.736-105.035 142.927-238.874 132.997-360.461 24.767-18.259 61.784-52.004 84.726-88.22 4.68-7.457 3.842-17.083-2.094-23.589z" fill=""></path></g></svg>
+<svg  id="l" width="80px" height="80px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7225)"></circle> <path d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7225" x1="16" y1="2" x2="16" y2="30" gradientUnits="userSpaceOnUse"> <stop stop-color="#37BBFE"></stop> <stop offset="1" stop-color="#007DBB"></stop> </linearGradient> </defs> </g></svg>
+</span>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="resturent.js"></script>
+</body>
+</html>
